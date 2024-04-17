@@ -1,0 +1,87 @@
+* {
+  font-family: Roboto;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* ---HEADER--- */
+header {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-left {
+  font-family: "Oswald", sans-serif;
+}
+
+.header-right {
+  font-family: "Roboto", sans-serif;
+}
+.header-left,
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.header-left img {
+  width: 80px;
+}
+
+.header-right p {
+  margin-right: 10px;
+}
+
+#sede-header {
+  color: white;
+}
+
+/* ---NAVEGADOR--- */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  padding-left: 40px;
+}
+
+nav a:hover {
+  color: white;
+}
+
+/* ---MAIN--- */
+.main h1{
+    font-family: "Oswald", sans-serif;
+}
+
+.boton{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ---FOOTER--- */
+footer {
+  background-color: black;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-size: 0.8em;
+}
+
+footer a {
+  text-decoration: none;
+}

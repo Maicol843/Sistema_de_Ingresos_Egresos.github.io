@@ -1,0 +1,78 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-image: url("../assets/Fondo.jpg");
+  background-size: 100% 100%;
+  background-position: center;
+  height: 100vh;
+  margin: 0;
+  color: #fff;
+}
+
+/* ---MAIN--- */
+.main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 150px;
+}
+
+/* LOGIN */
+.formulario h5 {
+  color: white;
+  font-family: "Oswald", sans-serif;
+}
+
+.formulario {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.logo {
+  max-width: 100px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.form-group select {
+  width: 180px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+.acceso {
+  color: #fff;
+}
+
+/* ---FOOTER--- */
+footer {
+  color: rgb(214, 214, 214);
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+footer a {
+  text-decoration: none;
+  color: rgb(255, 93, 93);
+  font-weight: bold;
+  
+}
+
+footer p,
+footer a {
+  font-size: 0.9em;
+}

@@ -1,0 +1,149 @@
+* {
+  font-family: Roboto;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* ---HEADER--- */
+header {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-left {
+  font-family: "Oswald", sans-serif;
+}
+
+.header-right {
+  font-family: "Roboto", sans-serif;
+}
+.header-left,
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.header-left img {
+  width: 80px;
+}
+
+.header-right p {
+  margin-right: 10px;
+}
+
+#sede-header {
+  color: white;
+}
+
+/* ---NAVEGADOR--- */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  padding-left: 40px;
+}
+
+nav a:hover {
+  color: white;
+}
+
+/* ---MAIN--- */
+.main .container {
+  margin-top: 50px;
+}
+
+.main h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* FORMULARIO */
+.row h1 {
+  font-family: "Oswald", sans-serif;
+}
+
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: "Roboto", sans-serif;
+}
+
+.formulario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* TABLA */
+.tabla {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+table h4,
+table h5 {
+  font-family: "Oswald", sans-serif;
+}
+
+tabla th,
+table tr {
+  font-family: "Roboto", sans-serif;
+}
+
+table {
+  width: 100%;
+  margin-top: 30px;
+}
+
+table,
+th,
+td {
+  border: 1px solid #dee2e6;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: center;
+}
+
+tfoot {
+  background-color: #f8f9fa;
+  font-weight: bold;
+}
+
+/* ---FOOTER--- */
+footer {
+  background-color: black;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-size: 0.8em;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+
+
+

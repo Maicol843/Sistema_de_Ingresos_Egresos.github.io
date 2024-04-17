@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Estilo CSS-->
+    <link rel="stylesheet" href="../css/estilo-balanceGeneral.css">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--Font Awesome Iconos-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!--Fonts Google Fuentes-->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+    <!--Html2 Canvas-->
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <!--Título de la página-->
+    <title>Balance General</title>
+</head>
+<body>
+    <!--HEADER-->
+    <header>
+        <div class="header-left">
+            <img src="../assets/Logo_2.png" alt="Logo Ministerio">
+            <h5><strong>Escuela Secundaria Rural Nº4 E.V.</strong></h5>
+        </div>
+        <div class="header-right">
+            <p><i class="fa-solid fa-school-flag"></i> Bienvenido sede, <span id="sede"></span></p>
+            <button onclick="cerrarSesion()" type="button" class="btn btn-danger mb-3"><i
+                    class="fa-solid fa-right-from-bracket"></i> Cerrar Sesión</button>
+        </div>
+    </header>
+    <!--NAVEGADOR-->
+    <nav class="nav-underline bg-danger p-2">
+        <div class="container">
+            <a href="../html/inicio.html"><i class="fa-solid fa-house"></i>
+                <b>Inicio</b></a>
+            <a href="../html/ingresos.html"><i class="fa-solid fa-money-bill-trend-up"></i>
+                <b>Ingresos</b></a>
+            <a href="../html/egresos.html"><i class="fa-solid fa-hand-holding-dollar"></i> <b>Egresos</b></a>
+            <a class="active text-white" href="../html/informes.html"><i class="fa-solid fa-file-lines"></i>
+                <b>Informes</b></a>
+            <a href="../html/graficas.html"><i class="fa-solid fa-chart-column"></i> <b>Graficas</b></a>
+        </div>
+    </nav>
+    <div class="main mb-5">
+        <h1 class="text-center mt-5 mb-4"><b>BALANCE GENERAL</b></h1>
+        <div class="container">
+            <form id="miFormulario">
+                
+            </form>
+                <table class="table table-bordered border-black mb-5 text-center" id="balance">
+                    <thead>
+                        <th colspan="4" class="dominio">
+                            <ul>
+                                <ol>
+                                    <h4 class="mt-4"><b>Ministerio de Educación de Jujuy</b></h4>
+                                </ol>
+                                <ol><img src="../assets/Logo_1.png" class="img-fluid mb-3" width="60" alt="logo"></ol>
+                                <ol>
+                                    <p>Solicitante: Sede Central</p>
+                                </ol>
+                                <ol>
+                                    <p>Dirección: Coronel Otero 188 Zona Centro - San Salvador de Jujuy</p>
+                                </ol>
+                                <ol>
+                                    <p>Sede que envía: <span id="envio"></span></p>
+                                </ol>
+                                <ol>
+                                    <h5><b>BALANCE GENERAL</b></h5>
+                                </ol>
+                            </ul>
+                        </th>
+                    </thead>
+                    <tbody>
+                        <tr class="table-active">
+                            <th colspan="2">ACTIVO</th>
+                            <th colspan="2">PASIVO</th>
+                        </tr>
+                        <tr class="table-active">
+                            <th colspan="2">ACTIVO CORRIENTE</th>
+                            <th colspan="2">PASIVO CORRIENTE</th>
+                        </tr>
+                        <tr id="activo-corriente"></tr>
+                        <tr>
+                            <td>Caja y Bancos</td>
+                            <td id="cajaBalance"><i class="fa-solid fa-dollar-sign"></i> 0.00</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><b>Total Activo Corriente</b></td>
+                            <td class="text-success" id="activoCorriente"><i class="fa-solid fa-dollar-sign"></i> 0.00</td>
+                            <td><b>Total Pasivo Corriente</b></td>
+                            <td class="text-danger"><i class="fa-solid fa-dollar-sign"></i> 0.00</td>
+                        </tr>
+                        <tr class="table-active">
+                            <th colspan="2">ACTIVO NO CORRIENTE</th>
+                            <th colspan="2">PASIVO NO CORRIENTE</th>
+                        </tr>
+                        <tr>
+                            <td class="text-light">-</td>
+                            <td class="text-light">-</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td><b>Total Pasivo No Corriente</b></td>
+                            <td class="text-danger"><i class="fa-solid fa-dollar-sign"></i> 0.00</td>
+                        </tr>
+                        <tr>
+                            <td></tdclass=>
+                            <td></td>
+                            <td class="table-active"><b>Total Pasivo</b></td>
+                            <td class="text-danger"><b><i class="fa-solid fa-dollar-sign"></i> 0.00</b></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <th class="table-active" colspan="2">PATRIMONIO NETO</th>
+                        </tr>
+                        <tr>
+                            <td><b></b></td>
+                            <td></td>
+                            <td>Capital</td>
+                            <td id="capital"><i class="fa-solid fa-dollar-sign"></i> 0.00</td>
+                        </tr>
+                        <tr>
+                            <td></b></td>
+                            <td></td>
+                            <td>Resultado acumulado</td>
+                            <td id="resultado"><i class="fa-solid fa-dollar-sign"></i> 0.00</td>
+                        </tr>
+                        <tr>
+                            <td><b>Total Activo No Corriente</b></td>
+                            <td class="text-success"><i class="fa-solid fa-dollar-sign"></i> 0.00</td>
+                            <td><b>Total Patrimonio Neto</b></td>
+                            <td class="text-danger" id="totalPN"><i class="fa-solid fa-dollar-sign"></i> 0.00</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td class="table-active"><b>Total Activo</b></td>
+                            <td class="text-success" id="totalActivo"><b><i class="fa-solid fa-dollar-sign"></i> 0.00</b></td>
+                            <td class="table-active"><b>Total P + PN</b></td>
+                            <td class="text-danger" id="totalPPN"><b><i class="fa-solid fa-dollar-sign"></i> 0.00</b></td>
+                        </tr>
+                    </tfoot>
+                </table>
+        </div>
+        <div class="boton mb-5 d-flex justify-content-center align-items-center">
+            <button type="button" class="btn btn-primary" onclick="descargarTabla()"><i class="fa-solid fa-download"></i> Descargar</button>
+        </div>
+    </div>
+    <!--FOOTER-->
+    <footer class="container-fluid">
+        <div class="footer-left">
+            <h6 class="mt-3 mb-3">&copy Ministerio de Educación de Jujuy 2024</h6>
+            <p class="mb-1"><i class="fa-solid fa-location-dot"></i> Sede Central: Coronel Otero 188 Zona Centro - San
+                Salvador de Jujuy</p>
+            <p class="mb-1"><i class="fa-solid fa-envelope"></i> Correo: secundariarural14@gmail.com</p>
+            <p><i class="fa-solid fa-terminal"></i> Diseñado por Maicol Daniel Mamani Chalco - <i
+                    class="fa-solid fa-code"></i> <a class="text-danger"
+                    href="https://www.tudiseñoweb.com">tudiseñoweb.com</a> - <i class="fa-brands fa-whatsapp"></i>
+                3884979421</p>
+        </div>
+        <div class="footer-right">
+            <img src="../assets/Logo_1.png" width="70" alt="Logo">
+        </div>
+    </footer>
+</body>
+<!--JavaScript-->
+<script src="../js/cerrar_sesion.js"></script>
+<script src="../js/balanceGeneral.js"></script>
+<!--Bootstrap-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</html>
