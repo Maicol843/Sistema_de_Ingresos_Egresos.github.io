@@ -246,10 +246,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
 
                 if (totalCajaDeudor > totalCajaAcreedor) {
-                    totalCajaDeudorAjustado = parseFloat(totalCajaDeudor - totalCajaAcreedor  - totalDebeAjuste + totalHaberAjuste).toFixed(2);
+                    totalCajaDeudorAjustado = parseFloat(totalCajaDeudor - totalCajaAcreedor  + totalDebeAjuste - totalHaberAjuste).toFixed(2);
                     totalCajaAcreedorAjustado = '0.00'
                 } else if (totalCajaAcreedor > totalCajaDeudor) {
-                    totalCajaAcreedorAjustado = parseFloat(totalCajaAcreedor - totalCajaDeudor + totalDebeAjuste - totalHaberAjuste).toFixed(2);
+                    totalCajaAcreedorAjustado = parseFloat(totalCajaAcreedor - totalCajaDeudor - totalDebeAjuste + totalHaberAjuste).toFixed(2);
                     totalCajaDeudorAjustado = '0.00'
                 }
 
@@ -263,12 +263,12 @@ document.addEventListener("DOMContentLoaded", function () {
                 <td>${cuenta.nombre}</td>
                 <td>${totalCajaDebe}</td>
                 <td>${totalCajaHaber}</td>
-                <td>${totalCajaAcreedor}</td>
                 <td>${totalCajaDeudor}</td>
+                <td>${totalCajaAcreedor}</td>
                 <td>${totalDebeAjuste.toFixed(2)}</td>
                 <td>${totalHaberAjuste.toFixed(2)}</td>
-                <td>${totalCajaAcreedorAjustado}</td>
                 <td>${totalCajaDeudorAjustado}</td>
+                <td>${totalCajaAcreedorAjustado}</td>
                 <td>${activo}</td>
                 <td>0.00</td>
                 <td>0.00</td>
@@ -323,10 +323,10 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
         //SALDOS
-        document.getElementById('saldos-deudor').textContent = (parseFloat(totalDeudor) + parseFloat(totalCajaAcreedor)).toFixed(2);
-        document.getElementById('saldos-acreedor').textContent = (parseFloat(totalDeudor) + parseFloat(totalCajaAcreedor)).toFixed(2) ;
-        document.getElementById('total-saldos-deudor').textContent = (parseFloat(totalDeudor) + parseFloat(totalCajaAcreedor)).toFixed(2);
-        document.getElementById('total-saldos-acreedor').textContent = (parseFloat(totalDeudor) + parseFloat(totalCajaAcreedor)).toFixed(2);
+        document.getElementById('saldos-deudor').textContent = (parseFloat(totalDeudor) + parseFloat(totalCajaDeudor)).toFixed(2);
+        document.getElementById('saldos-acreedor').textContent = (parseFloat(totalDeudor) + parseFloat(totalCajaDeudor)).toFixed(2) ;
+        document.getElementById('total-saldos-deudor').textContent = (parseFloat(totalDeudor) + parseFloat(totalCajaDeudor)).toFixed(2);
+        document.getElementById('total-saldos-acreedor').textContent = (parseFloat(totalDeudor) + parseFloat(totalCajaDeudor)).toFixed(2);
 
         //AJUSTES
         document.getElementById('ajustes-debe').textContent = (parseFloat(totalDebeAjuste) + parseFloat(totalHaberAjuste)).toFixed(2);
