@@ -1,87 +1,93 @@
 * {
     font-family: Roboto;
-  }
+}
   
-  body {
-    margin: 0;
-    padding: 0;
-  }
+body {
+  margin: 0;
+  padding: 0;
+}
   
-  /* ---HEADER--- */
-  header {
-    background-color: black;
-    color: white;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+/* ---HEADER--- */
+header {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
   
-  .header-left {
-    font-family: "Oswald", sans-serif;
-  }
+.header-left {
+  font-family: "Oswald", sans-serif;
+}
   
-  .header-right {
-    font-family: "Roboto", sans-serif;
-  }
-  .header-left,
-  .header-right {
-    display: flex;
-    align-items: center;
-  }
+.header-right {
+  font-family: "Roboto", sans-serif;
+}
   
-  .header-left img {
-    width: 80px;
-  }
+.header-left,
+.header-right {
+  display: flex;
+  align-items: center;
+}
   
-  .header-right p {
-    margin-right: 10px;
-  }
+.header-left img {
+  width: 80px;
+}
   
-  #sede-header {
-    color: white;
-  }
+.header-right p {
+  margin-right: 10px;
+}
   
-  /* ---NAVEGADOR--- */
-  .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
+#sede-header {
+  color: white;
+}
   
-  nav a {
-    text-decoration: none;
-    color: black;
-    padding-left: 40px;
-  }
+/* ---NAVEGADOR--- */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
   
-  nav a:hover {
-    color: white;
-  }
+nav a {
+  text-decoration: none;
+  color: black;
+  padding-left: 40px;
+}
   
-  /* ---MAIN--- */
-  .main h1{
-      font-family: "Oswald", sans-serif;
-  }
+nav a:hover {
+  color: white;
+}
   
-  .boton{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+/* ---MAIN--- */
+.main h1{
+  font-family: "Oswald", sans-serif;
+}
   
-  /* ---FOOTER--- */
-  footer {
-    background-color: black;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-    font-size: 0.8em;
-  }
+.boton{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#tablaPrebalance{
+  font-size: 0.8em;
+  width: 80%;
+}
   
-  footer a {
-    text-decoration: none;
-  }
+/* ---FOOTER--- */
+footer {
+  background-color: black;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-size: 0.8em;
+}
+  
+footer a {
+  text-decoration: none;
+}

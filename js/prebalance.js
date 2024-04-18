@@ -355,6 +355,10 @@ document.addEventListener("DOMContentLoaded", function () {
             document.getElementById('total-p+pn').textContent = totalPPN;
         } 
 
+        if (totalResultadoEjercicio == 0){
+            document.getElementById('total-p+pn').textContent = ppn.toFixed(2);
+        }
+
         localStorage.setItem("midato", totalActivo);
         localStorage.setItem("midato2", ppn);
         localStorage.setItem("midato3", totalResultadoEjercicio);
